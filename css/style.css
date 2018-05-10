@@ -1,0 +1,160 @@
+/* top-header*/
+.top-header .row {
+	display: flex;
+	align-items: center;
+
+}
+.menu {
+	text-align: center;
+	position: relative;
+}
+
+.menu a {
+	transition: color 0.5s ease-in-out;
+}
+
+.menu a:hover {
+	color: gold;
+}
+
+nav li {
+	list-style-type: none; 
+	margin-right: 10px; 
+	display: inline-block; 
+}
+
+nav a {
+	color: black
+}
+
+nav a:hover {
+	text-decoration: none; 
+	color: black;
+}
+
+.top-header .rightSide-logo{
+	float: right;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid black;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+/*slider*/
+.lebanon-photos img {
+	width: 100%;
+}
+
+#slider {
+	height: 500px;
+}
+
+/*content*/
+.social-media a:hover {
+	text-decoration: none
+}
+
+.text {
+	text-align: justify;
+}
+
+.text p, .text h4 {
+	line-height: 2;
+}
+
+/*Articles*/
+#articles {
+	margin-bottom: 3em;
+}
+
+#articles h3 {
+	text-align: center;
+}
+
+#articles h4 {
+	color: #223374;
+}
+
+#articles a h4 {
+	transition: all 1s ease-in-out;
+}
+
+#articles p {
+	text-align: justify;
+}
+
+#articles a:hover {
+	text-decoration: none;
+}
+
+#articles a:hover h4 {
+	color: gold;
+}
+
+.grow {
+	height: 100%; 
+	overflow: hidden;
+}
+
+.demo {
+	transition: all 1s ease-in-out;
+}
+
+.demo:hover {
+	transform: scale(1.1);
+}
+
+/*media queries*/
+@media (max-width: 768px) {
+	.content {
+		position: relative;
+		top: -200px;
+	}
+}
+
+@media (max-width: 736px) {
+	.info {
+		display: none;
+	}
+}
+
+@media (max-width: 414px) {
+	.top-header img {
+		display: none;
+	}
+	.menu {
+		text-align: center;
+	}
+	.menu a {
+		font-size: 1.2em;
+	}
+	.content {
+		position: relative;
+		top: -350px;
+	}
+
+	.content .info {
+		display: none;
+	}
+
+	#articles {
+		position: relative;
+		top: -350px;
+		margin-bottom: 0;
+		height: 400px;
+	}
+}
+
+@media (max-width: 375px) {
+	.menu a {
+		font-size: 0.9em;
+	}
+	.text p {
+		font-size: 0.9em;
+	}
+}
